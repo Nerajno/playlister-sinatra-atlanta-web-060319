@@ -1,0 +1,21 @@
+<h2>All Songs</h2>
+
+<ul>
+  <% @songs.each do |song| %>
+  <label>Song:</label>
+  <li>
+    <label>Name:</label>
+    <%= song.name %>
+    <br>
+    <label>Artist:</label>
+    <%= song.artist.name %>
+    <br>
+    <label>Genre:</label>
+    <%= song.genre.name %>
+  </li>
+  <br>
+  <% end %>
+</ul>
+
+<br/>
+<a href="/songs">Home</a>

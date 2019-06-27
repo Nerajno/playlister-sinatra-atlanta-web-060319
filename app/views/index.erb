@@ -1,0 +1,10 @@
+<h1>Welcome to Playlist</h1>
+
+<ul>
+    <% @songs.each do |song| %>
+  <li><%=song.name%></li>
+    <% end %>
+</ul>
+
+<a href="/songs"> See All Songs</a>
+<a href="/songs/new"> Create Song</a>
